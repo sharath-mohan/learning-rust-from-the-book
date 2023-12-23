@@ -28,6 +28,19 @@ fn main() {
     println!("{}", user3.active);
     let user4 = build_user_short_hand(String::from("Peter"), String::from("peter@email.com"));
     println!("{}", user4.username);
+
+    struct Point(f64,f64,f64);
+    let my_point = Point(5.0,6.0,7.0);
+    println!("{}", my_point.0);
+    // wont compile
+    // struct Database{
+    //     url: &str
+    // }
+    // let db = Database{
+    //     url: "postgres"
+    // };
+    // println!("{}", db.url);
+
 }
 
 fn build_user(email: String, username: String) -> User {
