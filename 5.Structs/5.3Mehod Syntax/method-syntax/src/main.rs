@@ -39,4 +39,5 @@ fn main() {
     println!("rect1 will fit in rect {}", rect.can_hold(&rect1));
     println!("rect2 will fit in rect {}", rect.can_hold(&rect2));
     println!("create square from rectangle {:?}", Rectangle::square(6));
+    println!("{}",Rectangle::area(&rect1));
 }
